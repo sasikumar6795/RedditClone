@@ -39,7 +39,7 @@ public class Post {
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "subreddit_id", referencedColumnName = "id")
+    @JoinColumn(name = "subredditId", referencedColumnName = "subreddit_Id")
     private Subreddit subreddit;
 
 

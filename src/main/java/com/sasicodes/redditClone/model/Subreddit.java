@@ -23,6 +23,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
 public class Subreddit {
     @Id
     @GeneratedValue(strategy = SEQUENCE)
+    @Column(name = "subreddit_Id")
     private Long id;
     @NotBlank(message = "Community name is required")
     private String name;
